@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Not Not Game</title>
+    <link rel="shortcut icon" href="./assets/android-icon-72x72.png" type="image/x-icon">
+    <!--favicon-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/276b65d818.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kreon|Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Not Not Game</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="description">
+                <h2>How to play this game?</h2>
+                <p>After you press start, there will be an arrow on the screen. Please press the opposite direction using the arrow key on your keyborad or just swipe in the opposite direction! Go challenge your brain! </p>
+            </section>
+    
+            <section class="startScreen">
+                <div class="playButton">
+                    <button><i class="far fa-play-circle"></i></button>
+                    <span class="visuallyhidden">Start button</span>
+                    <h3>Click to start!</h3>
+                </div>
+
+                <div class="socialMedia">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/VeedJohnson">
+                                <i class="fab fa-github"></i>
+                                <span class="visuallyhidden">github</span>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="https://twitter.com/veedjohnson">
+                                <i class="fab fa-twitter"></i>
+                                <span class="visuallyhidden">Twitter</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://instagram.com/veed.johnson">
+                                <i class="fab fa-instagram"></i>
+                                <span class="visuallyhidden">Twitter</span>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="mailto:48daveed@gmail.com">
+                                <i class="far fa-envelope"></i>
+                                <span class="visuallyhidden">email to</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--social media ends here-->
+            </section>
+    
+            <!--MVP-->
+            <section class="gameInterface">
+                <h4 class="invisible">Time: <span class="timeKeeper">60</span></h4>
+                <h4 class="invisible">Score: <span class="scoreKeeper">0</span></h4>
+                <div class="restart invisible">
+                    <button><i class="fas fa-undo"></i></button>
+                    <span class="visuallyhidden">restart</span>
+                </div>
+                <div class="arrows levelTwoArrow">
+                    <div class="left arrow invisible overlay">
+                        <i class="fas fa-arrow-left"></i>
+                        <span class="visuallyhidden">left</span>
+                    </div>
+    
+                    <div class="down arrow invisible overlay">
+                        <i class="fas fa-arrow-down"></i>
+                        <span class="visuallyhidden">down</span>
+                    </div>
+    
+                    <div class="right arrow invisible overlay">
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="visuallyhidden">right</span>
+                    </div>
+    
+                    <div class="up arrow invisible overlay">
+                        <i class="fas fa-arrow-up"></i>
+                        <span class="visuallyhidden">up</span>
+                    </div>
+                </div>
+            </section> <!--game interface ends-->
+
+            <section class="levelTwo invisible">
+                <h2>Time's up for level 1! Ready for <a href="index.html">next level?</a></h2>
+                <p class="levelTwoDescription">
+                    For level two, there is going to be crosses randomly pop up in different parts of screen. Each cross means one 'not'. If there is one cross and the direction is left, then you should press left since not not left is still left! If there are two crosses, you need to press right to goal since it is not not left! 
+                </p>
+            </section>
+
+            <section class="cross">
+                <ul>
+                    
+                </ul>
+            </section>
+
+            <section class="endingScreen invisible">
+                <h2>Time's Up! Want to <a href="index.html">restart</a>?</h2>
+            </section>
+        </div> <!--wrapper-->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

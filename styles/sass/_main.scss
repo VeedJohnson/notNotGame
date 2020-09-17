@@ -1,0 +1,207 @@
+header{
+    border-bottom: 5px dashed $borderColor;
+    .wrapper{
+        height: 18vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.description{
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+}
+
+.startScreen{
+    position: relative;
+}
+
+.playButton{
+    text-align: center;
+    margin-top: 2%;
+    i{
+        font-size: 15rem;
+        background-color: $backgroundColor;
+        color: $textColor;
+    }
+    i:hover{
+        color: $hoverColor;
+    }
+}
+
+.socialMedia{
+    position: fixed;
+    right: 8%;
+    bottom: 2.5%;
+    i{
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+}
+
+.gameInterface{
+    text-align: center;
+    width: 100%;
+    h4{
+        margin: 5% 1% 1% 1%;
+    }
+}
+
+.restart{
+    font-size: 1.2rem;
+    margin: 3%;
+}
+
+.arrows{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    background: $backgroundColor;
+    padding: 2% 5%;
+    i{
+        font-size: 15rem;
+    }
+}
+
+.overlay{
+    position: absolute;
+}
+
+// classes for js
+.invisible{
+    display: none;
+}
+
+.correct{
+    color: $correctColor;
+}
+
+.incorrect{
+    color:$incorrectColor;
+}
+
+.endingScreen,
+.levelTwo{
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    padding: 5%;
+    background-color: $popupBackground;
+    box-shadow: 20px 10px 5px $borderColor;
+}
+
+.endingScreen{
+    left: 30%;
+}
+
+.levelTwo{
+    left: 10%;
+    width: 80%;
+}
+
+.floatingCross{
+    position:absolute;
+    z-index: 99;
+    font-size: 4rem;
+}
+
+.socialMediaRelocation{
+    right: 3%;
+    bottom: 10%;
+}
+
+
+//responsive design
+@media(max-width: 1065px){
+    .levelTwo{
+        width: 70%;
+    }
+    .socialMedia{
+        bottom: 5%
+    }
+}
+
+
+@media(max-width: 920px){
+    .levelTwo{
+        left: 10%;
+    }
+}
+
+@media(max-width: 850px){
+    .levelTwo{
+        top: 45%;
+        left: 5%;
+    }
+    .endingScreen{
+        left: 20%;
+    }
+}
+
+@media(max-width: 765px){
+    .levelTwo{
+        width: 80%;
+    }
+    .endingScreen{
+        left: 15%;
+    }
+}
+
+@media(max-width: 650px){
+    h1{
+        font-size: 4rem;
+    }
+    .description{
+        width: 80%;
+    }
+    .socialMedia{
+        bottom: 7%;
+    }
+    .arrow i{
+        font-size: 10rem;
+    }
+    .levelTwo{
+        top: 40%;
+    }
+    .endingScreen{
+        width: 70%;
+    }
+}
+
+@media(max-width: 465px){
+    h1{
+        font-size: 3rem;
+        line-height: 1;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 415px){
+    .socialMedia{
+        bottom: 0;
+        ul{
+            display: flex;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+    }
+
+    .levelTwo{
+        top: 35%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    header{
+        height: 17vh;
+    }
+}
